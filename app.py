@@ -33,7 +33,7 @@ app.layout = html.Div(children=[
 
     dcc.Graph(
         id='pie',
-        figure = go.Figure(dabta=[go.Pie(
+        figure = go.Figure(data=[go.Pie(
             labels = pie_df['label'].dropna(axis=0, how='any'),
             values = pie_df['value'].dropna(axis=0, how='any')
         )
